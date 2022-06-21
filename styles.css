@@ -39,6 +39,7 @@ body {
     border-radius: 20px;
 
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
     gap: 10px;
 
