@@ -92,12 +92,20 @@ body {
     color: white;
 }
 
+#clear:hover {
+    background-color: rgb(29, 179, 29);
+}
+
 #delete {
     border: 2px solid white;
     background-color: rgb(43, 213, 255);
     color: white;
 
     width: 50px;
+}
+
+#delete:hover {
+    background-color: rgb(34, 171, 206);
 }
 
 .mainButtons{
