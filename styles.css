@@ -29,11 +29,13 @@ body {
     border-radius: 5px;
     height: 50px;
     padding: 5px;
+
+    transition: all .1s ease-in-out;
 }
 
 
 #calculator {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(36, 36, 36);
     border-radius: 20px;
 
     display: flex;
@@ -116,18 +118,35 @@ body {
     font-size: 30px;
 }
 
+.number:hover {
+    background-color: rgb(170, 170, 170);
+}
+
 .operator {
     border: 2px solid rgb(70, 70, 70);
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(19, 19, 19);
     color: white;
+    
     width: 96px;
     height: 96px;
 
     font-size: 30px;
 }
 
+.operator:hover {
+    background-color: black;
+}
+
 #decimal {
     border: 2px solid rgb(70, 70, 70);
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(19, 19, 19);
     color: white;
+}
+
+#decimal:hover {
+    background-color: black;
+}
+
+.clicked {
+    transform: scale(.9);
 }

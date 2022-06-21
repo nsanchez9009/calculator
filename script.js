@@ -42,6 +42,10 @@ function calculate(entry){
 const display = document.querySelector("#displayText");
 const operatorUsed = document.querySelector("#operationText");
 
+const buttons = document.querySelectorAll(".button");
+buttons.forEach(button => button.addEventListener("click", () => button.classList.add("clicked")));
+buttons.forEach(button => button.addEventListener("transitionend", () => button.classList.remove("clicked")));
+
 const numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener("click", () => {
     if (entry[1] === "="){
