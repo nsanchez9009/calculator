@@ -53,14 +53,12 @@ numbers.forEach(number => number.addEventListener("click", () => {
     }
     value += number.textContent;
     display.textContent = value;
-    console.log(value);
 }));
 
 const clearButton = document.querySelector("#clear");
 clearButton.addEventListener("click", () => {
     entry = [];
     value = "";
-    console.log(entry);
     display.textContent = "---";
     operatorUsed.textContent = "Operation: "
 });
@@ -91,7 +89,6 @@ operators.forEach(operator => operator.addEventListener("click", () => {
     }
     value = "";
     entry.push(operator.textContent);
-    console.log(entry);
 }));
 
 const equalButton = document.querySelector("#equal");
