@@ -65,10 +65,23 @@ body {
     text-align: end;
 }
 
+.topSection {
+    display: flex;
+    justify-content: space-between;
+}
+
 .topButtons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
+}
+
+#operationText {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #clear {
@@ -111,4 +124,10 @@ body {
     height: 96px;
 
     font-size: 30px;
+}
+
+#decimal {
+    border: 2px solid rgb(70, 70, 70);
+    background-color: rgb(8, 8, 8);
+    color: white;
 }

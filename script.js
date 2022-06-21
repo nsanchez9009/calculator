@@ -40,9 +40,13 @@ function calculate(entry){
 }
 
 const display = document.querySelector("#displayText");
+const operatorUsed = document.querySelector("#operationText");
 
 const numbers = document.querySelectorAll(".number");
 numbers.forEach(number => number.addEventListener("click", () => {
+    if (entry[1] === "="){
+        entry = [];
+    }
     value += number.textContent;
     display.textContent = value;
     console.log(value);
@@ -54,6 +58,7 @@ clearButton.addEventListener("click", () => {
     value = "";
     console.log(entry);
     display.textContent = "---";
+    operatorUsed.textContent = "Operation: "
 });
 
 const deleteButton = document.querySelector("#delete");
@@ -71,6 +76,8 @@ deleteButton.addEventListener("click", () => {
 
 const operators = document.querySelectorAll(".operator");
 operators.forEach(operator => operator.addEventListener("click", () => {
+    operatorUsed.textContent = `Operation: ${operator.textContent}`;
+    
     entry.push(value);
 
     if (entry.length === 3){
@@ -90,8 +97,7 @@ equalButton.addEventListener("click", () => {
     }
     else {
         display.textContent = calculate(entry);
+        entry = entry.slice(0, entry.length - 1);
     }
-    entry = entry.slice(0, entry.length - 1);
-    console.log(entry);
 });
 
