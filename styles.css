@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@font-face {
+    font-family: "digital-7";
+    src: url("./fonts/digital-7.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: aliceblue;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 50px;
+    padding: 5px;
+}
+
+
+#calculator {
+    background-color: rgb(27, 27, 27);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    box-sizing: border-box;
+    width: 450px;
+    padding: 15px;
+}
+
+.display {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding-right: 5px;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#displayText {
+    font-family: "digital-7";
+    font-size: 70px;
+    text-align: end;
+}
+
+.topButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#clear {
+    border: 2px solid white;
+    background-color: rgb(33, 211, 33);
+    color: white;
+}
+
+#delete {
+    border: 2px solid white;
+    background-color: rgb(43, 213, 255);
+    color: white;
+
+    width: 50px;
+}
+
+.mainButtons{
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.number {
+    border: 2px solid white;
+    background-color: rgb(226, 226, 226);
+    width: 96px;
+    height: 96px;
+
+    font-size: 30px;
+}
+
+.operator {
+    border: 2px solid rgb(70, 70, 70);
+    background-color: rgb(8, 8, 8);
+    color: white;
+    width: 96px;
+    height: 96px;
+
+    font-size: 30px;
+}
